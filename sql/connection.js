@@ -1,4 +1,3 @@
-
 const mysql = require('mysql')
 const db_password = require('../config')
 

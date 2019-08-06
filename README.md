@@ -158,6 +158,7 @@ Let's get started...
 
 * Everything should have stayed the same. If you navigate to `http://localhost:4001/employees/5` you should see the text "getting employees..."
 
+
 #### 5. Hooking up MySQL
 
 * Create a new folder called `mysql`

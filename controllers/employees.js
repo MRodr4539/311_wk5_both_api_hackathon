@@ -12,7 +12,7 @@ const getEmployees = (req, res) => {
 
 
 const getEmployeesById = (req, res) => {
-    pool.query(`SELECT * FROM employees WHERE emp_no = ${req.params.emp_no}`, (err, rows) => {
+    pool.query(`SELECT * FROM employees WHERE emp_no = ${req.params.id}`, (err, rows) => {
         if (err) return handleSQLError(res, err)
         return res.json(rows);
     })

@@ -1,6 +1,8 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const employeesRouter = require('./routers/employees')
+const salariesRouter = require('./routers/salaries')
+
 
 
 const app = express();

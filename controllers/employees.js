@@ -32,6 +32,6 @@ const getEmployeesByFirstName = (req, res) => {
 module.exports = { 
     getEmployeesByFirstName,
     getEmployees,
-    getEmployeesById
+    getEmployeesById,
+   
 }
-    

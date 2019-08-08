@@ -18,12 +18,12 @@ const getEmployeesById = (req, res) => {
     })
 } 
 
-// const getEmployeesByFirstName = () => {
-//     pool.query(`SELECT * FROM employees WHERE ?? = ${req.params.first_name}`, (err, rows) => {
-//         if (err) return handleSQLError(res, err)
-//         return res.json(rows);
-//     })
-// }
+const getEmployeesByFirstName = (req, res) => {
+    pool.query(`SELECT * FROM employees WHERE first_name = ${req.params.first_name}`, (err, rows) => {
+        if (err) return handleSQLError(res, err)
+        return res.json(rows);
+    })
+}
 
 
 
@@ -32,5 +32,5 @@ const getEmployeesById = (req, res) => {
 module.exports = { 
     getEmployees,
     getEmployeesById,
+    getEmployeesByFirstName 
 }
-    // getEmployeesByFirstName 

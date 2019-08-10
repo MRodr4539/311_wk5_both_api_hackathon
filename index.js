@@ -10,6 +10,7 @@ const port = process.env.PORT || 4444
 
 app.use(bodyParser.json())
 app.use('/employees', employeesRouter)
+app.use('/salaries', salariesRouter)
 
 
 app.get('/', (req, res) => {

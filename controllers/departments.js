@@ -8,3 +8,9 @@ const getSalaries = (req, res) => {
         return res.json(rows);
     })
 } 
+
+
+
+
+
+

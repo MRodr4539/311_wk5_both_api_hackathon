@@ -33,5 +33,4 @@ module.exports = {
     getSalaries,
     getSalariesBySal,
     getSalariesById,
-   
 }

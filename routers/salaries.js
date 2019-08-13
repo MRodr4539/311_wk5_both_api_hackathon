@@ -10,4 +10,6 @@ router.get('/:id', salariesController.getSalariesById)
 
 router.get('/salary/:salary', salariesController.getSalariesBySal)
 
+
 module.exports = router
+

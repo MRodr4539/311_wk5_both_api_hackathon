@@ -13,6 +13,7 @@ app.use('/employees', employeesRouter)
 app.use('/salaries', salariesRouter)
 app.use('/titles', titlesRouter)
 
+
 app.get('/', (req, res) => {
     res.send('Welcome to SUPER server!')
 })

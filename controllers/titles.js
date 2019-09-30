@@ -11,6 +11,8 @@ const getTitles = (req, res) => {
 } 
 
 
+
+
 const getTitlesById = (req, res) => {
     pool.query(`SELECT * FROM titles WHERE emp_no = ${req.params.id} LIMIT 10`, (err, rows) => {
         if (err) return handleSQLError(res, err)

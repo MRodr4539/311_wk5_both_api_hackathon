@@ -8,6 +8,8 @@ router.get('/', salariesController.getSalaries)
 router.get('/:id', salariesController.getSalariesById)
 
 
+
+
 router.get('/salary/:salary', salariesController.getSalariesBySal)
 
 

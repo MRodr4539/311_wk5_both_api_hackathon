@@ -11,6 +11,8 @@ const getSalaries = (req, res) => {
 } 
 
 
+
+
 const getSalariesById = (req, res) => {
     pool.query(`SELECT * FROM salaries WHERE emp_no = ${req.params.id} LIMIT 10`, (err, rows) => {
         if (err) return handleSQLError(res, err)
